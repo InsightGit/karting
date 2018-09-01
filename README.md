@@ -11,4 +11,4 @@ Wait until a HEN exploit exists or a way to edit the PS3's CA list. Both of whic
 `FIX ME CFW INSTRUCTIONS`
 
 ## License
-MIT. I did not create any of the games in question nor am I affiliated with any of the developers of these video games. All researched data was acquired via means of downloading game package files through a public database of direct-to-PSN URLs with no protection. Nothing malicious is intended. This program was written as a labor of love for the franchise and the fact the game's server is defunct.
+MIT. I did not create any of the games in question nor am I affiliated with any of the developers of these video games or systems. All researched data was acquired via means of downloading game package files through a public database of direct-to-PSN URLs with no protection. Nothing malicious is intended. This program was written as a labor of love for the franchise and the fact the game's server is defunct.
