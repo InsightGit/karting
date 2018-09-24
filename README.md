@@ -1,5 +1,5 @@
 # karting
-An emulated game server for LittleBigPlanet™Karting on the PS3®.
+An emulated game server for LittleBigPlanet™Karting and ModNation®Racers on the PS3®.
 
 ## How to Connect
 All types of PS3 systems will be able to connect (regardless if it's HAN, HEN, CFW, DEX). The server is in its prototype phase therefore instructions will be made once it's actually playable.
