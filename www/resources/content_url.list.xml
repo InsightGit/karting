@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource name="content_url.list">
-  <request method="GET" url="content_urls.xml"/>
+  <request method="GET" url="api/v1/content_url.list.xml"/>
   <response name="response" type="anchor">
     <element name="content_urls" type="anchor">
       <attribute name="total" type="integer"/>

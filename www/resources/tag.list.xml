@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource name="tag.list">
-  <request method="GET" url="tags.xml"/>
+  <request method="GET" url="api/v1/tag.list.xml"/>
   <response name="response" type="anchor">
     <element name="tags" type="anchor">
       <attribute name="language" type="string"/>

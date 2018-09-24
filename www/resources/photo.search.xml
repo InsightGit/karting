@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource name="photo.search">
-  <request method="GET" url="photos/search.xml" login_required="true">
+  <request method="GET" url="api/v1/photo.search.xml" login_required="true">
     <param name="track_id" type="integer" required="false"/>
     <param name="username" type="string" required="false"/>
     <param name="associated_usernames" type="array" required="false"/>

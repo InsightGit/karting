@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource name="planet.profile">
-  <request method="GET" url="planet/profile.xml" login_required="true">
+  <request method="GET" url="api/v1/planet.profile.xml" login_required="true">
     <param name="player_id" type="integer" required="false"/>
   </request>
   <response name="response" type="anchor">

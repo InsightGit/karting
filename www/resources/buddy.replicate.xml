@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource name="buddy.replicate">
-  <request method="POST" url="buddies/replicate.xml" login_required="true">
+  <request method="POST" url="api/v1/buddy.replicate.xml" login_required="true">
     <param name="usernames" type="array" required="false"/>
     <param name="blocked_usernames" type="array" required="false"/>
   </request>

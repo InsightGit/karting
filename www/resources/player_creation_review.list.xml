@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource name="player_creation_review.list">
-  <request method="GET" url="player_creation_reviews.xml" login_required="true">
+  <request method="GET" url="api/v1/player_creation_review.list.xml" login_required="true">
     <param name="player_creation_id" type="integer" required="true"/>
     <param name="page" type="integer" required="false" default="1"/>
     <param name="per_page" type="integer" required="false" default="25"/>

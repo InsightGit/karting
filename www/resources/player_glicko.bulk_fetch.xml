@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource name="player_glicko.bulk_fetch">
-  <request method="GET" url="player_glickos/bulk_fetch.xml" login_required="true">
+  <request method="GET" url="api/v1/player_glickos.bulk_fetch.xml" login_required="true">
     <param name="player_ids" type="array" required="true"/>
   </request>
   <response name="response" type="anchor">

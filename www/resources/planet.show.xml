@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource name="planet.show">
-  <request method="GET" url="planet.xml" login_required="true">
+  <request method="GET" url="api/v1/planet.show.xml" login_required="true">
     <param name="player_id" type="integer" required="false"/>
     <param name="is_counted" type="boolean" required="false" default="true"/>
   </request>

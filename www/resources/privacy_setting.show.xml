@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource name="privacy_setting.show">
-  <request method="GET" url="privacy_setting.xml" login_required="true"/>
+  <request method="GET" url="api/v1/privacy_setting.show.xml" login_required="true"/>
   <response name="response" type="anchor">
     <element name="privacy_settings" type="anchor">
       <element name="profile_acls" type="anchor">

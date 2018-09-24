@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource name="session.login_np">
-  <request method="POST" url="session/login_np.xml" ssl_required="true">
+  <request method="POST" url="api/v1/session.login_np.xml" ssl_required="false">
     <param name="platform" type="string" required="true" options="PS3,WEB"/>
     <param name="ticket" type="binary" required="true"/>
     <param name="hmac" type="string" required="true"/>
@@ -12,7 +12,6 @@
       <attribute name="player_name" type="string"/>
       <attribute name="presence" type="string"/>
       <attribute name="platform" type="string"/>
-      <attribute name="login_time" type="datetime"/>
       <attribute name="ip_address" type="string"/>
     </element>
   </response>

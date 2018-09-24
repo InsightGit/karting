@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource name="server.select">
-  <request method="POST" url="servers/select.xml" login_required="true">
+  <request method="POST" url="api/v1/server.select.xml" login_required="true">
     <param name="server_type" type="string" required="true" options="FLS,DIRECTORY"/>
     <param name="server_version" type="string" required="false"/>
   </request>
@@ -8,14 +8,12 @@
     <element name="server" type="Server">
       <attribute name="address" type="string"/>
       <attribute name="port" type="integer"/>
-      <attribute name="server_private_key" type="string"/>
       <attribute name="server_type" type="string"/>
       <attribute name="session_uuid" type="string"/>
       <element name="ticket" type="ServerTicket">
         <attribute name="expiration_date" type="datetime"/>
         <attribute name="player_id" type="integer"/>
         <attribute name="session_uuid" type="string"/>
-        <attribute name="signature" type="string"/>
         <attribute name="username" type="string"/>
       </element>
     </element>
