@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resource name="leaderboard.view" login_required="true">
-  <request method="GET" url="leaderboards/view.xml">
+  <request method="GET" url="api/v1/leaderboards/view.xml">
     <param name="type" type="string" default="LIFETIME" options="DAILY,LAST_MONTH,LAST_WEEK,LIFETIME,MONTHLY,WEEKLY" />
     <param name="game_type" type="string" default="OVERALL" options="CHARACTER_CREATORS,KART_CREATORS,ONLINE_ACTION_RACE,ONLINE_HOT_SEAT_RACE,ONLINE_LKS_RACE,ONLINE_PURE_RACE,ONLINE_TIME_TRIAL_RACE,OVERALL,OVERALL_CREATORS,OVERALL_RACE,TRACK_CREATORS" />
     <param name="platform" type="string" default="[session]" options="PS2,PS3,PSP,WEB" />

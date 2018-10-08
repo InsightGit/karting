@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resource name="player_creation.search" login_required="true">
-  <request method="GET" url="player_creations/search.xml">
+  <request method="GET" url="api/v1/player_creations/search.xml">
     <param name="search" type="string" minlength="2" required="false" />
     <param name="search_tags" type="string" minlength="2" required="false" />
     <param name="page" type="integer" default="1" minvalue="1" />

@@ -1,5 +1,13 @@
+FILE,SOURCE
+CHANGELOG,https://github.com/meiraleal/rails-0.8.0/commit/25b7b717ce53fd86a75f35c7dc51b04787c6295d
+MIT-LICENSE,https://github.com/meiraleal/rails-0.8.0/commit/25b7b717ce53fd86a75f35c7dc51b04787c6295d
 Rakefile,https://github.com/meiraleal/rails-0.8.0/commit/25b7b717ce53fd86a75f35c7dc51b04787c6295d
+config/application.yml,https://dev.ece.ubc.ca/projects/softdist/browser/config/application.yml?rev=d13046aa6c80bb2bcda4ba4092713d2f15b1a032
+config/boot.rb,https://dev.ece.ubc.ca/projects/softdist/browser/config/boot.rb?rev=d13046aa6c80bb2bcda4ba4092713d2f15b1a032
 config/environment.rb,https://dev.ece.ubc.ca/projects/softdist/browser/config/environment.rb?rev=d13046aa6c80bb2bcda4ba4092713d2f15b1a032
+config/environments/development.rb,https://dev.ece.ubc.ca/projects/softdist/browser/config/environments/development.rb?rev=d13046aa6c80bb2bcda4ba4092713d2f15b1a032
+config/environments/production.rb,https://dev.ece.ubc.ca/projects/softdist/browser/config/environments/production.rb?rev=d13046aa6c80bb2bcda4ba4092713d2f15b1a032
+config/environments/test.rb,https://dev.ece.ubc.ca/projects/softdist/browser/config/environments/test.rb?rev=d13046aa6c80bb2bcda4ba4092713d2f15b1a032
 doc/apache_protection,https://github.com/meiraleal/rails-0.8.0/commit/25b7b717ce53fd86a75f35c7dc51b04787c6295d
 doc/index.html,https://github.com/meiraleal/rails-0.8.0/commit/25b7b717ce53fd86a75f35c7dc51b04787c6295d
 public/javascripts/application.js,https://dev.ece.ubc.ca/projects/softdist/browser/public/javascripts/application.js

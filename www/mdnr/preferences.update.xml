@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resource name="preferences.update">
-  <request method="PUT" url="preferences.xml">
+  <request method="PUT" url="api/v1/preferences.xml">
     <param name="preference[language_code]" type="string" maxlength="10" options="da,de,en-gb,en-us,es,fi,fr,it,ja,ko,nl,no,pl,pt,ru,sv,zh-cn,zh-tw" />
     <param name="preference[timezone]" type="string" />
     <param name="preference[region_code]" type="string" options="scea,sceasia,scee,scej" />

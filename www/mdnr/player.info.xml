@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resource name="player.info" login_required="true">
-  <request method="GET" url="players/:id/info.xml">
+  <request method="GET" url="api/v1/players/:id/info.xml">
     <param name="id" type="integer" minvalue="1" required="true" />
     <param name="platform" type="string" default="[session]" options="PS2,PS3,PSP,WEB" />
   </request>

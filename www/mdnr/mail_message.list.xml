@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resource name="mail_message.list" login_required="true">
-  <request method="GET" url="mail_messages.xml">
+  <request method="GET" url="api/v1/mail_messages.xml">
     <param name="page" type="integer" default="1" minvalue="1" />
     <param name="per_page" type="integer" default="25" minvalue="1" />
     <param name="mail_message_types" type="array" />

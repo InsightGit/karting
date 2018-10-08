@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resource name="content_update.latest">
-  <request method="GET" url="content_updates/latest.xml">
+  <request method="GET" url="api/v1/content_updates.latest.xml">
     <param name="platform" type="string" default="[session]" options="PS2,PS3,PSP,WEB" />
     <param name="content_update_type" type="string" options="AUTO_CIRCLE_PLAYLIST,HOT_SEAT_PLAYLIST,ROM_STATUES,THEMED_EVENTS" required="true" />
   </request>

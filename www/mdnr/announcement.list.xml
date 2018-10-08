@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resource name="announcement.list" login_required="true">
-  <request method="GET" url="announcements.xml">
+  <request method="GET" url="api/v1/announcements.xml">
     <param name="platform" type="string" default="[session]" />
   </request>
   <response name="response" type="anchor">

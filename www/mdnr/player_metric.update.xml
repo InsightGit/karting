@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resource name="player_metric.update">
-  <request method="PUT" url="player_metrics.xml">
+  <request method="PUT" url="api/v1/player_metrics.xml">
     <param name="username" type="string" required="false" />
     <param name="player_metric_type" type="string" options="ANALYTICS,GLICKO" required="true" />
     <param name="player_metric[data]" type="binary" />

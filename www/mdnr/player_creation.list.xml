@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resource name="player_creation.list" login_required="true">
-  <request method="GET" url="player_creations.xml">
+  <request method="GET" url="api/v1/player_creations.xml">
     <param name="platform" type="string" options="PS2,PS3,PSP,WEB" />
     <param name="page" type="integer" default="1" minvalue="1" />
     <param name="per_page" type="integer" default="10" maxvalue="100" minvalue="1" />

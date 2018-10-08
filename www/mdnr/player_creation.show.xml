@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resource name="player_creation.show" login_required="true">
-  <request method="GET" url="player_creations/:id.xml">
+  <request method="GET" url="api/v1/player_creations/:id.xml">
     <param name="id" type="integer" minvalue="10000" required="true" />
     <param name="is_counted" type="boolean" default="true" />
   </request>

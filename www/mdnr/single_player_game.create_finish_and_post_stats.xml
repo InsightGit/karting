@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resource name="single_player_game.create_finish_and_post_stats" login_required="true">
-  <request method="POST" url="single_player_games/create_finish_and_post_stats.xml" content_type="multipart/form-data">
+  <request method="POST" url="api/v1/single_player_games/create_finish_and_post_stats.xml" content_type="multipart/form-data">
     <param name="game[game_type]" type="string" options="CHARACTER_CREATORS,KART_CREATORS,ONLINE_ACTION_RACE,ONLINE_HOT_SEAT_RACE,ONLINE_LKS_RACE,ONLINE_PURE_RACE,ONLINE_TIME_TRIAL_RACE,OVERALL,OVERALL_CREATORS,OVERALL_RACE,TRACK_CREATORS" required="true" />
     <param name="game[game_state]" type="string" default="FINISHED" options="ACTIVE,CANCELLED,CONCEDE,CONCEDE_ON,DISCONNECTED,DISCONNECTED_ON,DIVERGENCE,FINISHED,FORFEIT,FORFEIT_ON,FRIENDLY_QUIT,FRIENDLY_QUIT_ON,PENDING,PROCESSED,QUIT,QUIT_ON" required="false" />
     <param name="game[host_player_id]" type="integer" default="[session]" />

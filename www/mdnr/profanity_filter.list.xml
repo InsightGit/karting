@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resource name="profanity_filter.list">
-  <request method="GET" url="profanity_filters.xml">
+  <request method="GET" url="api/v1/profanity_filters.xml">
     <param name="options[use_advanced_anchors]" type="boolean" default="false" />
     <param name="options[use_special_chars]" type="boolean" default="true" />
     <param name="options[use_one_big_pattern]" type="boolean" default="false" />

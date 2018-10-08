@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resource name="player_creation.verify" login_required="true">
-  <request method="POST" url="player_creations/verify.xml">
+  <request method="POST" url="api/v1/player_creations/verify.xml">
     <param name="id" type="array" required="false" />
     <param name="offline_id" type="array" required="false"/>
   </request>

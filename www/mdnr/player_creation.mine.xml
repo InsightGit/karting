@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resource name="player_creation.mine" login_required="true">
-  <request method="GET" url="player_creations/mine.xml">
+  <request method="GET" url="api/v1/player_creations/mine.xml">
     <param name="page" type="integer" default="1" minvalue="1" />
     <param name="per_page" type="integer" default="10" maxvalue="100" minvalue="1" />
     <param name="sort_column" type="string" default="points" options="id,player_creation_type,rating,points,downloads,views,name,description,rank,races_started,created_at" />

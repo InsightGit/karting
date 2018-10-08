@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resource name="player_creation.create" login_required="true">
-  <request method="POST" url="player_creations.xml" content_type="multipart/form-data">
+  <request method="POST" url="api/v1/player_creations.xml" content_type="multipart/form-data">
     <param name="player_creation[name]" type="string" minlength="3" required="true" />
     <param name="player_creation[description]" type="string" minlength="2" />
     <param name="player_creation[tags]" type="array" />

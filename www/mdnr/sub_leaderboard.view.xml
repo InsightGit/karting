@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resource name="sub_leaderboard.view" login_required="true">
-  <request method="GET" url="sub_leaderboards/view.xml">
+  <request method="GET" url="api/v1/sub_leaderboards/view.xml">
     <param name="type" type="string" default="LIFETIME" options="DAILY,LAST_MONTH,LAST_WEEK,LIFETIME,MONTHLY,WEEKLY" />
     <param name="sub_group_id" type="integer" required="true" />
     <param name="sub_key_id" type="integer" required="true" />
