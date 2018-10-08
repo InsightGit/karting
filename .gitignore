@@ -1,3 +1,6 @@
+www/config/policies/drafts/lbpk/eula-bpa.txt
+www/config/policies/drafts/mdnr/eula-bpa.txt
+
 # Until we can figure out what to do with them…
 www/rails/public/images/playerconnect_logo.png
 www/rails/public/stylesheets/application.css
