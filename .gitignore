@@ -1,5 +1,16 @@
+# GitHub Desktop Folder
+.git/
+
+# JetBrains PHPStorm Folder
+.idea/
+
+# Avoid accidental comitting that were FTP'd…
+63A20DA6D1476E78702E0294441E0172.txt
+www/.well-known/lbpk.gobotron.me/
+www/.well-known/pki-validation/
 www/config/policies/drafts/lbpk/eula-bpa.txt
 www/config/policies/drafts/mdnr/eula-bpa.txt
+www/resources/
 
 # Until we can figure out what to do with them…
 www/rails/public/images/playerconnect_logo.png
