@@ -1,7 +1,7 @@
-# GitHub Desktop Folder
+# GitHub Desktop Git Folder
 .git/
 
-# JetBrains PHPStorm Folder
+# JetBrains PHPStorm IDE Folder
 .idea/
 
 # Avoid accidental comitting that were FTP'd…
@@ -13,6 +13,7 @@ www/config/policies/drafts/mdnr/eula-bpa.txt
 www/resources/
 
 # Until we can figure out what to do with them…
+www/rails/public/images/modnation/logo.png
 www/rails/public/images/playerconnect_logo.png
 www/rails/public/stylesheets/application.css
 www/rails/public/stylesheets/cache/admin.css
