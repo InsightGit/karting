@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <resource name="leaderboard.view" login_required="true">
-  <request method="GET" url="api/v1/leaderboards/view.xml">
-    <param name="type" type="string" default="LIFETIME" options="DAILY,LAST_MONTH,LAST_WEEK,LIFETIME,MONTHLY,WEEKLY" />
-    <param name="game_type" type="string" default="OVERALL" options="CHARACTER_CREATORS,KART_CREATORS,ONLINE_ACTION_RACE,ONLINE_HOT_SEAT_RACE,ONLINE_LKS_RACE,ONLINE_PURE_RACE,ONLINE_TIME_TRIAL_RACE,OVERALL,OVERALL_CREATORS,OVERALL_RACE,TRACK_CREATORS" />
-    <param name="platform" type="string" default="[session]" options="PS2,PS3,PSP,WEB" />
-    <param name="page" type="integer" default="1" minvalue="1" />
-    <param name="per_page" type="integer" default="10" minvalue="1" />
-    <param name="column_page" type="integer" default="1" minvalue="1" />
-    <param name="cols_per_page" type="integer" default="9" minvalue="1" />
-    <param name="sort_column" type="string" default="points" />
-    <param name="sort_order" type="string" default="desc" />
-    <param name="limit" type="integer" />
+  <request method="GET" url="api/v1/leaderboard.view.xml">
+    <param name="type" type="string" default="LIFETIME" options="DAILY,LAST_MONTH,LAST_WEEK,LIFETIME,MONTHLY,WEEKLY"/>
+    <param name="game_type" type="string" default="OVERALL" options="CHARACTER_CREATORS,KART_CREATORS,ONLINE_ACTION_RACE,ONLINE_HOT_SEAT_RACE,ONLINE_LKS_RACE,ONLINE_PURE_RACE,ONLINE_TIME_TRIAL_RACE,OVERALL,OVERALL_CREATORS,OVERALL_RACE,TRACK_CREATORS"/>
+    <param name="platform" type="string" default="[session]" options="PS2,PS3,PSP,WEB"/>
+    <param name="page" type="integer" default="1" minvalue="1"/>
+    <param name="per_page" type="integer" default="10" minvalue="1"/>
+    <param name="column_page" type="integer" default="1" minvalue="1"/>
+    <param name="cols_per_page" type="integer" default="9" minvalue="1"/>
+    <param name="sort_column" type="string" default="points"/>
+    <param name="sort_order" type="string" default="desc"/>
+    <param name="limit" type="integer"/>
   </request>
   <response name="response" type="anchor">
     <element name="my_stats" type="anchor">

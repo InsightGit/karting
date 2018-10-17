@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <resource name="player.skill_levels" login_required="true">
-  <request method="GET" url="api/v1/players/skill_levels.xml">
-    <param name="id" type="array" required="true" />
+  <request method="GET" url="api/v1/player.skill_levels.xml">
+    <param name="id" type="array" required="true"/>
   </request>
   <response name="response" type="anchor">
     <element name="players" type="anchor">

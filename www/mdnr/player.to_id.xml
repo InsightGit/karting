@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <resource name="player.to_id" login_required="true">
-  <request method="GET" url="api/v1/players/to_id.xml">
-    <param name="username" type="string" required="true" />
+  <request method="GET" url="api/v1/player.to_id.xml">
+    <param name="username" type="string" required="true"/>
   </request>
   <response name="response" type="anchor">
     <element name="player_id" type="integer"/>

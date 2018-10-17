@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <resource name="player_creation_rating.list" login_required="true">
-  <request method="GET" url="api/v1/player_creation_ratings.xml">
-    <param name="player_creation_id" type="integer" minvalue="10000" required="true" />
-    <param name="page" type="integer" default="1" minvalue="1" />
-    <param name="per_page" type="integer" default="10" minvalue="1" />
+  <request method="GET" url="api/v1/player_creation_rating.list.xml">
+    <param name="player_creation_id" type="integer" minvalue="10000" required="true"/>
+    <param name="page" type="integer" default="1" minvalue="1"/>
+    <param name="per_page" type="integer" default="10" minvalue="1"/>
   </request>
   <response name="response" type="anchor">
     <element name="player_creation_ratings" type="anchor">

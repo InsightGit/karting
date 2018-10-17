@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <resource name="player_creation.search" login_required="true">
-  <request method="GET" url="api/v1/player_creations/search.xml">
-    <param name="search" type="string" minlength="2" required="false" />
-    <param name="search_tags" type="string" minlength="2" required="false" />
-    <param name="page" type="integer" default="1" minvalue="1" />
-    <param name="per_page" type="integer" default="10" maxvalue="100" minvalue="1" />
-    <param name="platform" type="string" options="PS2,PS3,PSP,WEB" />
-    <param name="player_creation_type" type="string" options="CHARACTER,KART,PHOTO,TRACK" />
-    <param name="is_remixable" type="boolean" options="true,false" required="false" />
-    <param name="ai" type="boolean" options="true,false" required="false" />
-    <param name="auto_reset" type="boolean" options="true,false" required="false" />
-    <param name="username" type="array" required="false" />
+  <request method="GET" url="api/v1/player_creation.search.xml">
+    <param name="search" type="string" minlength="2" required="false"/>
+    <param name="search_tags" type="string" minlength="2" required="false"/>
+    <param name="page" type="integer" default="1" minvalue="1"/>
+    <param name="per_page" type="integer" default="10" maxvalue="100" minvalue="1"/>
+    <param name="platform" type="string" options="PS2,PS3,PSP,WEB"/>
+    <param name="player_creation_type" type="string" options="CHARACTER,KART,PHOTO,TRACK"/>
+    <param name="is_remixable" type="boolean" options="true,false" required="false"/>
+    <param name="ai" type="boolean" options="true,false" required="false"/>
+    <param name="auto_reset" type="boolean" options="true,false" required="false"/>
+    <param name="username" type="array" required="false"/>
   </request>
   <response name="response" type="anchor">
     <element name="player_creations" type="anchor">

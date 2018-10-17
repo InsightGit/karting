@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <resource name="mail_message.list" login_required="true">
-  <request method="GET" url="api/v1/mail_messages.xml">
-    <param name="page" type="integer" default="1" minvalue="1" />
-    <param name="per_page" type="integer" default="25" minvalue="1" />
-    <param name="mail_message_types" type="array" />
+  <request method="GET" url="api/v1/mail_message.list.xml">
+    <param name="page" type="integer" default="1" minvalue="1"/>
+    <param name="per_page" type="integer" default="25" minvalue="1"/>
+    <param name="mail_message_types" type="array"/>
   </request>
   <response name="response" type="anchor">
     <element name="mail_messages" type="anchor">
