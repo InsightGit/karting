@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource name="single_player_game.create_finish_and_post_stats">
-  <request method="POST" url="single_player_games/create_finish_and_post_stats.xml" login_required="true">
+  <request method="POST" url="api/v1/single_player_game.create_finish_and_post_stats.xml" login_required="true">
     <param name="game[game_type]" type="string" required="true" options="OVERALL,RACE,BATTLE,BUBBLE_CHASE,SCORE_ATTACK"/>
     <param name="game[track_idx]" type="integer" required="true"/>
     <param name="game[game_state]" type="string" required="false" options="PENDING,ACTIVE,FINISHED,QUIT,QUIT_ON,CONCEDE,CONCEDE_ON,DISCONNECTED,DISCONNECTED_ON,DIVERGENCE,CANCELLED,FORFEIT,FORFEIT_ON,FRIENDLY_QUIT,FRIENDLY_QUIT_ON,PROCESSED" default="FINISHED"/>

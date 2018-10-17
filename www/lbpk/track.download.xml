@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource name="track.download">
-  <request method="POST" url="tracks/:id/download.xml" login_required="true">
+  <request method="POST" url="api/v1/track.download.xml" login_required="true">
     <param name="id" type="integer" required="true"/>
     <param name="is_counted" type="boolean" required="false" default="true"/>
   </request>

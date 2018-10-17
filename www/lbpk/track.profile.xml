@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource name="track.profile">
-  <request method="GET" url="api/v1/track/:id/profile.xml" login_required="true">
+  <request method="GET" url="api/v1/track.profile.xml" login_required="true">
     <param name="id" type="integer" required="true"/>
     <param name="photos_per_track" type="integer" required="false" default="3"/>
     <param name="reviews_per_track" type="integer" required="false" default="1"/>

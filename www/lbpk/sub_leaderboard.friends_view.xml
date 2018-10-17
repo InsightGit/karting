@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource name="sub_leaderboard.friends_view">
-  <request method="GET" url="sub_leaderboards/friends_view.xml" login_required="true">
+  <request method="GET" url="api/v1/sub_leaderboard.friends_view.xml" login_required="true">
     <param name="sub_group_id" type="integer" required="true"/>
     <param name="sub_key_id" type="integer" required="true"/>
     <param name="type" type="string" required="false" options="LIFETIME,DAILY,WEEKLY,MONTHLY,LAST_WEEK,LAST_MONTH" default="LIFETIME"/>
