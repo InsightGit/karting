@@ -9,10 +9,6 @@ Options -Indexes +FollowSymlinks
   RewriteEngine On
   RewriteBase /
   RewriteOptions AllowNoSlash
-  <FilesMatch "\.(?:htaccess|md|php|rb|cgi|fcgi|yml)$">
-    Order allow, deny
-    Deny from all
-  </FilesMatch>
   RewriteCond %{ENV:REDIRECT_STATUS} ^$
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
@@ -27,5 +23,13 @@ Options -Indexes +FollowSymlinks
   CheckSpelling Off
   CheckCaseOnly Off
 </IfModule>
+<FilesMatch "\.(git|ht|(?:htaccess|md|rb|cgi|fcgi|yml)$)">
+  # Deny all public access to sensitive and Git files…
+  <IfModule authz_core_module>
+    <If "-f %{REQUEST_FILENAME}">
+      Require all denied
+    </If>
+  </IfModule>
+</FilesMatch>
 
 SetOutputFilter DEFLATE
