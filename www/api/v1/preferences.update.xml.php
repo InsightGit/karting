@@ -1,26 +1,37 @@
 <?php
-require_once(__DIR__.'/../../shared/configurations.php');
-var_dump( Request::POST_Float('a'));
-exit;
-if (empty(Request::POST_String('preferences[language_code]'))) {
+require_once(__DIR__.'/../../app/_Karting.InitializationLamphouse.php');
+use Karting\Utility\Request;
+use Karting\Utility\Response;
+
+if (!is_null(Request::POST_String('preferences[language_code]'))) {
   $language_code = Request::POST_String('preferences[language_code]');
   Response::Cookie_String('language_code', $language_code);
+} else {
+  $language_code = 'en-us';
 }
-if (empty(Request::POST_Number('preferences[timezone]'))) {
+if (!is_null(Request::POST_Number('preferences[timezone]'))) {
   $timezone = Request::POST_Number('preferences[timezone]');
   Response::Cookie_Number('timezone', $timezone);
+} else {
+  $timezone = -300;
 }
-if (empty(Request::POST_String('preferences[region_code]'))) {
+if (!is_null(Request::POST_String('preferences[region_code]'))) {
   $region_code = Request::POST_String('preferences[region_code]');
   Response::Cookie_String('region_code', $region_code);
+} else {
+  $region_code = 'scea';
 }
-if (empty(Request::POST_String('preferences[domain]'))) {
+if (!is_null(Request::POST_String('preferences[domain]'))) {
   $domain = Request::POST_String('preferences[domain]');
   Response::Cookie_String('domain', $domain);
+} else {
+  $domain = '';
 }
-if (empty(Request::POST_IP4('preferences[ip_address]'))) {
+if (!is_null(Request::POST_IP4('preferences[ip_address]'))) {
   $ip_address = Request::POST_IP4('preferences[ip_address]');
   Response::Cookie_IP4('ip_address', $ip_address);
+} else {
+  $ip_address = '::1';
 }
 $response->startElement('result');
   $response->startElement('status');
@@ -29,11 +40,11 @@ $response->startElement('result');
   $response->endElement();
   $response->startElement('response');
     $response->startElement('preferences');
-    $response->writeAttribute('language_code', $language_code? $language_code: '');
-    $response->writeAttribute('timezone', $timezone? $timezone: '');
-    $response->writeAttribute('region_code', $region_code? $region_code: '');
-    $response->writeAttribute('domain', $domain? $domain: '');
-    $response->writeAttribute('ip_address', $ip_address? $ip_address: '');
+    $response->writeAttribute('language_code', $language_code);
+    $response->writeAttribute('timezone', $timezone);
+    $response->writeAttribute('region_code', $region_code);
+    $response->writeAttribute('domain', $domain);
+    $response->writeAttribute('ip_address', $ip_address);
     $response->endElement();
   $response->endElement();
 $response->endElement();
