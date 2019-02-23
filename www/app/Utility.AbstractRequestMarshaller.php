@@ -1,5 +1,5 @@
 <?php
-namespace Karting\Utility;
+namespace PlayerConnect\Utility;
 
 /**
  * Abstract Request Marshaller — Outlines the static class' functions
@@ -9,7 +9,7 @@ abstract class AbstractRequestMarshaller {
 
   /**
    * Gets the specified GET variable validated as a STRING type.
-   * Returns NULL when it doesn't exist or type mismatch occures.
+   * Returns NULL when it doesn't exist or type mismatch occurs.
    *
    * @param string|int $name of the variable.
    * @return string Returns the matching variable.
@@ -18,7 +18,7 @@ abstract class AbstractRequestMarshaller {
 
   /**
    * Gets the specified GET variable validated as a INT type.
-   * Returns NULL when it doesn't exist or type mismatch occures.
+   * Returns NULL when it doesn't exist or type mismatch occurs.
    *
    * @param string|int $name of the variable.
    * @return int Returns the matching variable.
@@ -27,7 +27,7 @@ abstract class AbstractRequestMarshaller {
 
   /**
    * Gets the specified GET variable validated as a FLOAT type.
-   * Returns NULL when it doesn't exist or type mismatch occures.
+   * Returns NULL when it doesn't exist or type mismatch occurs.
    *
    * @param string|int $name of the variable.
    * @return float Returns the matching variable.
@@ -36,7 +36,7 @@ abstract class AbstractRequestMarshaller {
 
   /**
    * Gets the specified GET variable validated as a BOOLEAN type.
-   * Returns NULL when it doesn't exist or type mismatch occures.
+   * Returns NULL when it doesn't exist or type mismatch occurs.
    *
    * @param string|int $name of the variable.
    * @return boolean Returns the matching variable.
@@ -45,7 +45,7 @@ abstract class AbstractRequestMarshaller {
 
   /**
    * Gets the specified GET variable validated as a IPv4/6 address.
-   * Returns NULL when it doesn't exist or type mismatch occures.
+   * Returns NULL when it doesn't exist or type mismatch occurs.
    *
    * @param string|int $name of the variable.
    * @return string Returns the matching variable.
@@ -54,7 +54,7 @@ abstract class AbstractRequestMarshaller {
 
   /**
    * Gets the specified GET variable decoded from Base64 of any type.
-   * Returns NULL when it doesn't exist or type mismatch occures.
+   * Returns NULL when it doesn't exist or type mismatch occurs.
    *
    * @param string|int $name of the variable.
    * @return mixed Returns the matching variable.
@@ -63,7 +63,7 @@ abstract class AbstractRequestMarshaller {
 
   /**
    * Gets the specified POST variable validated as a STRING type.
-   * Returns NULL when it doesn't exist or type mismatch occures.
+   * Returns NULL when it doesn't exist or type mismatch occurs.
    *
    * @param string|int $name of the variable.
    * @return string Returns the matching variable.
@@ -72,7 +72,7 @@ abstract class AbstractRequestMarshaller {
 
   /**
    * Gets the specified POST variable validated as a INT type.
-   * Returns NULL when it doesn't exist or type mismatch occures.
+   * Returns NULL when it doesn't exist or type mismatch occurs.
    *
    * @param string|int $name of the variable.
    * @return int Returns the matching variable.
@@ -81,7 +81,7 @@ abstract class AbstractRequestMarshaller {
 
   /**
    * Gets the specified POST variable validated as a FLOAT type.
-   * Returns NULL when it doesn't exist or type mismatch occures.
+   * Returns NULL when it doesn't exist or type mismatch occurs.
    *
    * @param string|int $name of the variable.
    * @return float Returns the matching variable.
@@ -90,7 +90,7 @@ abstract class AbstractRequestMarshaller {
 
   /**
    * Gets the specified POST variable validated as a BOOLEAN type.
-   * Returns NULL when it doesn't exist or type mismatch occures.
+   * Returns NULL when it doesn't exist or type mismatch occurs.
    *
    * @param string|int $name of the variable.
    * @return boolean Returns the matching variable.
@@ -99,7 +99,7 @@ abstract class AbstractRequestMarshaller {
 
   /**
    * Gets the specified POST variable validated as a IPv4/6 address.
-   * Returns NULL when it doesn't exist or type mismatch occures.
+   * Returns NULL when it doesn't exist or type mismatch occurs.
    *
    * @param string|int $name of the variable.
    * @return string Returns the matching variable.
@@ -108,7 +108,7 @@ abstract class AbstractRequestMarshaller {
 
   /**
    * Gets the specified POST variable decoded from Base64 of any type.
-   * Returns NULL when it doesn't exist or type mismatch occures.
+   * Returns NULL when it doesn't exist or type mismatch occurs.
    *
    * @param string|int $name of the variable.
    * @return mixed Returns the matching variable.
@@ -117,7 +117,7 @@ abstract class AbstractRequestMarshaller {
 
   /**
    * Gets the specified COOKIE variable validated as a STRING type.
-   * Returns NULL when it doesn't exist or type mismatch occures.
+   * Returns NULL when it doesn't exist or type mismatch occurs.
    *
    * @param string|int $name of the variable.
    * @return string Returns the matching variable.
@@ -126,7 +126,7 @@ abstract class AbstractRequestMarshaller {
 
   /**
    * Gets the specified COOKIE variable validated as a INT type.
-   * Returns NULL when it doesn't exist or type mismatch occures.
+   * Returns NULL when it doesn't exist or type mismatch occurs.
    *
    * @param string|int $name of the variable.
    * @return int Returns the matching variable.
@@ -135,7 +135,7 @@ abstract class AbstractRequestMarshaller {
 
   /**
    * Gets the specified COOKIE variable validated as a FLOAT type.
-   * Returns NULL when it doesn't exist or type mismatch occures.
+   * Returns NULL when it doesn't exist or type mismatch occurs.
    *
    * @param string|int $name of the variable.
    * @return float Returns the matching variable.
@@ -144,7 +144,7 @@ abstract class AbstractRequestMarshaller {
 
   /**
    * Gets the specified COOKIE variable validated as a BOOLEAN type.
-   * Returns NULL when it doesn't exist or type mismatch occures.
+   * Returns NULL when it doesn't exist or type mismatch occurs.
    *
    * @param string|int $name of the variable.
    * @return boolean Returns the matching variable.
@@ -153,7 +153,7 @@ abstract class AbstractRequestMarshaller {
 
   /**
    * Gets the specified COOKIE variable validated as a IPv4/6 address.
-   * Returns NULL when it doesn't exist or type mismatch occures.
+   * Returns NULL when it doesn't exist or type mismatch occurs.
    *
    * @param string|int $name of the variable.
    * @return string Returns the matching variable.
@@ -162,7 +162,7 @@ abstract class AbstractRequestMarshaller {
 
   /**
    * Gets the specified COOKIE variable decoded from Base64 of any type.
-   * Returns NULL when it doesn't exist or type mismatch occures.
+   * Returns NULL when it doesn't exist or type mismatch occurs.
    *
    * @param string|int $name of the variable.
    * @return mixed Returns the matching variable.

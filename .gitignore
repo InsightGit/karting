@@ -24,3 +24,10 @@ www/rails/public/images/playerconnect_logo.png
 www/rails/public/stylesheets/application.css
 www/rails/public/stylesheets/cache/admin.css
 www/rails/public/stylesheets/cache/modnation.css
+
+# Apache
+bin/
+conf/
+error/
+modules/
+logs/

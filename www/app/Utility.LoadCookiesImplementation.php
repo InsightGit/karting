@@ -1,5 +1,5 @@
 <?php
-namespace Karting\Utility;
+namespace PlayerConnect\Utility;
 
 /**
  * Cookies Implementation — Implementation of AbstractCookiesMarshaller
@@ -15,7 +15,7 @@ class Cookies extends AbstractCookiesMarshaller {
    * @return mixed Returns the matching variable.
    **/
   public static function Get(string $name) {
-    
+    return isset($_SESSION[$name])? $_SESSION[$name]: NULL;
   }
 
   /**
@@ -26,6 +26,7 @@ class Cookies extends AbstractCookiesMarshaller {
    * @return NULL when successful.
    **/
   public static function Set(string $key, $value) {
-    
+    $_SESSION[$key] = $value;
+    return NULL;
   }
 }

@@ -1,7 +1,7 @@
 <?php
-require_once(__DIR__.'/../../app/_Karting.InitializationLamphouse.php');
-use Karting\Utility\Request;
-use Karting\Utility\Response;
+require_once(__DIR__.'/../../app/_PlayerConnect.InitializationLamphouse.php');
+use PlayerConnect\Utility\Request;
+use PlayerConnect\Utility\Response;
 
 if (!is_null(Request::POST_String('preferences[language_code]'))) {
   $language_code = Request::POST_String('preferences[language_code]');

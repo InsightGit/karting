@@ -1,5 +1,5 @@
 <?php
-namespace Karting\Utility;
+namespace PlayerConnect\Utility;
 
 /**
  * Abstract Cookies Marshaller — Outlines the static class' functions

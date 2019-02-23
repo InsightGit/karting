@@ -1,7 +1,7 @@
 <?php
-namespace Karting\Utility;
+namespace PlayerConnect\Utility;
 
-use Karting\Utility\Cookies;
+use PlayerConnect\Utility\Cookies;
 
 /**
  * Response Implementation — Implementation of AbstractResponseMarshaller
@@ -59,7 +59,7 @@ class Response extends AbstractResponseMarshaller {
 
   /**
    * Sets the specified COOKIE variable validated as a IPv4/6 address.
-   * Returns NULL when it doesn't exist or type mismatch occures.
+   * Returns NULL when it doesn't exist or type mismatch occurs.
    *
    * @param string|int $name of the variable.
    * @param string $value of the variable.
@@ -78,7 +78,7 @@ class Response extends AbstractResponseMarshaller {
    * @return NULL when successful.
    **/
   public static function COOKIE_Base64(string $name, string $value) {
-    Cookies::Set($name, (string)$value);
+    Cookies::Set($name, (string)base64_encode($value));
     return NULL;
   }
 }

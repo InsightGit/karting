@@ -1,5 +1,5 @@
 <?php
-namespace Karting\Utility;
+namespace PlayerConnect\Utility;
 
 /**
  * Abstract Response Marshaller — Outlines the static class' functions
@@ -45,7 +45,7 @@ abstract class AbstractResponseMarshaller {
 
   /**
    * Sets the specified COOKIE variable validated as a IPv4/6 address.
-   * Returns NULL when it doesn't exist or type mismatch occures.
+   * Returns NULL when it doesn't exist or type mismatch occurs.
    *
    * @param string|int $name of the variable.
    * @param string $value of the variable.
