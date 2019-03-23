@@ -18,10 +18,11 @@ declare(strict_types = 1);
 namespace Karting\Skeleton;
 
 /**
- * Abstract Response Marshaller — Outlines the static class' functions
+ * Response Abstraction — Outlines the static class' functions
  * Allows the writing of COOKIE values as validated types.
+ * @package Karting\Skeleton
  */
-abstract class AbstractResponseMarshaller {
+abstract class ResponseAbstraction {
 
   /**
    * Sets the specified COOKIE variable validated as a STRING type.

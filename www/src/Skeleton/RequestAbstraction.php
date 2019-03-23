@@ -18,10 +18,11 @@ declare(strict_types = 1);
 namespace Karting\Skeleton;
 
 /**
- * Abstract Request Marshaller — Outlines the static class' functions
+ * Request Abstraction — Outlines the static class' functions
  * Allows the reading of GET, POST, or COOKIE values as validated types.
+ * @package Karting\Skeleton
  */
-abstract class AbstractRequestMarshaller {
+abstract class RequestAbstraction {
 
   /**
    * Gets the specified GET variable validated as a STRING type.
@@ -135,6 +136,7 @@ abstract class AbstractRequestMarshaller {
    * Gets the specified COOKIE variable validated as a STRING type.
    * Returns NULL when key doesn't exist or type's mismatched.
    *
+   * @uses Karting\Skeleton\Cookies::GET to get session variables.
    * @param string|int $key (name) of the variable.
    * @return string Returns the matching variable.
    **/
@@ -144,6 +146,7 @@ abstract class AbstractRequestMarshaller {
    * Gets the specified COOKIE variable validated as a INT type.
    * Returns NULL when key doesn't exist or type's mismatched.
    *
+   * @uses Karting\Skeleton\Cookies::GET to get session variables.
    * @param string|int $key (name) of the variable.
    * @return int Returns the matching variable.
    **/
@@ -153,6 +156,7 @@ abstract class AbstractRequestMarshaller {
    * Gets the specified COOKIE variable validated as a FLOAT type.
    * Returns NULL when key doesn't exist or type's mismatched.
    *
+   * @uses Karting\Skeleton\Cookies::GET to get session variables.
    * @param string|int $key (name) of the variable.
    * @return float Returns the matching variable.
    **/
@@ -162,6 +166,7 @@ abstract class AbstractRequestMarshaller {
    * Gets the specified COOKIE variable validated as a BOOLEAN type.
    * Returns NULL when key doesn't exist or type's mismatched.
    *
+   * @uses Karting\Skeleton\Cookies::GET to get session variables.
    * @param string|int $key (name) of the variable.
    * @return boolean Returns the matching variable.
    **/
@@ -171,6 +176,7 @@ abstract class AbstractRequestMarshaller {
    * Gets the specified COOKIE variable validated as a IPv4/6 address.
    * Returns NULL when key doesn't exist or type's mismatched.
    *
+   * @uses Karting\Skeleton\Cookies::GET to get session variables.
    * @param string|int $key (name) of the variable.
    * @return string Returns the matching variable.
    **/
@@ -180,6 +186,7 @@ abstract class AbstractRequestMarshaller {
    * Gets the specified COOKIE variable decoded from Base64 of any type.
    * Returns NULL when key doesn't exist or type's mismatched.
    *
+   * @uses Karting\Skeleton\Cookies::GET to get session variables.
    * @param string|int $key (name) of the variable.
    * @return mixed Returns the matching variable.
    **/

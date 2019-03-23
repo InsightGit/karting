@@ -20,10 +20,11 @@ namespace Karting\Skeleton;
 use Karting\Skeleton\Cookies;
 
 /**
- * Response Implementation — Implementation of AbstractResponseMarshaller
+ * Response Implementation — Implementation of ResponseMarshaller
  * Allows the writing of COOKIE values as validated types.
+ * @package Karting\Skeleton
  */
-class Response extends AbstractResponseMarshaller {
+class Response extends ResponseAbstraction {
 
   /**
    * Sets the specified COOKIE variable validated as a STRING type.

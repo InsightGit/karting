@@ -18,10 +18,11 @@ declare(strict_types = 1);
 namespace Karting\Skeleton;
 
 /**
- * Abstract Cookies Marshaller — Outlines the static class' functions
+ * Cookies Implementation — Implementation of CookiesMarshaller
  * Functions to allow the reading and writing of SESSION variables.
+ * @package Karting\Skeleton
  */
-abstract class AbstractCookiesMarshaller {
+class Cookies extends CookiesAbstraction {
 
   /**
    * Gets the specified COOKIE variable by cookie name.
@@ -30,7 +31,9 @@ abstract class AbstractCookiesMarshaller {
    * @param string|int $key (name) of the variable.
    * @return mixed Returns the matching variable.
    **/
-  abstract public static function Get(string $key);
+  public static function Get(string $key) {
+    return isset($_SESSION[$key])? $_SESSION[$key]: NULL;
+  }
 
   /**
    * Sets a new COOKIE variable by cookie name and value.
@@ -39,5 +42,8 @@ abstract class AbstractCookiesMarshaller {
    * @param string|int $value of the variable.
    * @return NULL when successful.
    **/
-  abstract public static function Set(string $key, $value);
+  public static function Set(string $key, $value) {
+    $_SESSION[$key] = $value;
+    return NULL;
+  }
 }

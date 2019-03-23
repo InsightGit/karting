@@ -18,13 +18,16 @@ declare(strict_types = 1);
 session_start();
 error_reporting(-1);
 $_ROOT = $_SERVER['DOCUMENT_ROOT'];
-require_once "$_ROOT/src/LoadServerConfiguration.php";
-require_once "$_ROOT/src/AbstractCookiesMarshaller.php";
-require_once "$_ROOT/src/LoadCookiesImplementation.php";
-require_once "$_ROOT/src/AbstractRequestMarshaller.php";
-require_once "$_ROOT/src/LoadRequestImplementation.php";
-require_once "$_ROOT/src/AbstractResponseMarshaller.php";
-require_once "$_ROOT/src/LoadResponseImplementation.php";
+$_STAGEMODE = 'Development'; // Development, ProductionQA, Production
+require_once "$_ROOT/src/__Default/Configurations/$_STAGEMODE.php";
+require_once "$_ROOT/src/Skeleton/CookiesAbstraction.php";
+require_once "$_ROOT/src/Skeleton/CookiesImplementation.php";
+require_once "$_ROOT/src/Skeleton/RequestAbstraction.php";
+require_once "$_ROOT/src/Skeleton/RequestImplementation.php";
+require_once "$_ROOT/src/Skeleton/ResponseAbstraction.php";
+require_once "$_ROOT/src/Skeleton/ResponseImplementation.php";
+require_once "$_ROOT/src/Utilities/PagenationAbstraction.php";
+require_once "$_ROOT/src/Utilities/PagenationImplementation.php";
 use Karting\Skeleton\Response;
 use Karting\Skeleton\Cookies;
 $language_codes = 'd[ae]|en-(gb|us)|es(-mx)?|f[ir]|it|ja|ko|n[lo]|p(l|t(-br)?)|ru|sv|zh-(cn|tw)';
@@ -43,3 +46,4 @@ $Response->openURI('php://output');
 $Response->startDocument('1.0', 'UTF-8');
 $Response->setIndentString('  ');
 $Response->setIndent(TRUE);
+
