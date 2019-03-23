@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource name="player_profile.update" login_required="true">
-  <request method="PUT" url="api/v1/player_profile.update.xml">
+  <request method="PATCH" url="api/v1/player_profile.update.xml">
     <param name="player_profile[first_name]" type="string" maxlength="30"/>
     <param name="player_profile[middle_name]" type="string" maxlength="30"/>
     <param name="player_profile[last_name]" type="string" maxlength="30"/>

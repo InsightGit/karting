@@ -13,16 +13,11 @@
  * GNU General Public License for more details.
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
- **/ 
-require_once(__DIR__ . '/../../index.php');
-use Karting\Skeleton\Request;
-use Karting\Skeleton\Response;
-$Response->startElement('result');
-  $Response->startElement('status');
-    $Response->writeElement('id', SUCCESSFUL_RESPONSE_CODE);
-    $Response->writeElement('message', SUCCESSFUL_COMPLETION);
-  $Response->endElement();
-  $Response->startElement('response');
-  $Response->endElement();
-$Response->endElement();
-$Response->endDocument();
+ **/
+const LANGUAGE_CODE = 'en-us';
+const CLIENT_TIMEZONE = -300;
+const REGION_CODE = 'scea';
+const COOKIE_DOMAIN = '';
+const IP_ADDRESS = '::1';
+const SUCCESSFUL_RESPONSE_CODE = 0;
+const SUCCESSFUL_COMPLETION = 'Successful completion';

@@ -13,16 +13,31 @@
  * GNU General Public License for more details.
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
- **/ 
-require_once(__DIR__ . '/../../index.php');
-use Karting\Skeleton\Request;
-use Karting\Skeleton\Response;
-$Response->startElement('result');
-  $Response->startElement('status');
-    $Response->writeElement('id', SUCCESSFUL_RESPONSE_CODE);
-    $Response->writeElement('message', SUCCESSFUL_COMPLETION);
-  $Response->endElement();
-  $Response->startElement('response');
-  $Response->endElement();
-$Response->endElement();
-$Response->endDocument();
+ **/
+declare(strict_types = 1);
+namespace Karting\Skeleton;
+
+/**
+ * Abstract Cookies Marshaller — Outlines the static class' functions
+ * Functions to allow the reading and writing of SESSION variables.
+ */
+abstract class AbstractCookiesMarshaller {
+
+  /**
+   * Gets the specified COOKIE variable by cookie name.
+   * Returns NULL when the cookie doesn't exist.
+   *
+   * @param string|int $key (name) of the variable.
+   * @return mixed Returns the matching variable.
+   **/
+  abstract public static function Get(string $key);
+
+  /**
+   * Sets a new COOKIE variable by cookie name and value.
+   *
+   * @param string|int $key (name) of the variable.
+   * @param string|int $value of the variable.
+   * @return NULL when successful.
+   **/
+  abstract public static function Set(string $key, $value);
+}

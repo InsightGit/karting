@@ -10,15 +10,13 @@
 # NetBeans IDE Folder
 nbproject/
 
-# Avoid accidental comitting that were FTP'd…
-63A20DA6D1476E78702E0294441E0172.txt
-www/.well-known/lbpk.gobotron.me/
-www/.well-known/pki-validation/
-www/app/policies/drafts/lbpk/eula-bpa.txt
-www/app/policies/drafts/mdnr/eula-bpa.txt
-www/resources/
+# Avoid accidental comitting that were FTP'd
+#63A20DA6D1476E78702E0294441E0172.txt
+#www/.well-known/pki-validation/
+#www/src/policies/drafts/lbpk/eula-bpa.txt
+#www/src/policies/drafts/mdnr/eula-bpa.txt
 
-# Until we can figure out what to do with them…
+# Until we can figure out what to do with them
 www/rails/public/images/modnation/logo.png
 www/rails/public/images/playerconnect_logo.png
 www/rails/public/stylesheets/application.css
