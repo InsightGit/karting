@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource name="achievement.list" login_required="true">
   <request method="GET" url="api/v1/achievement.list.xml">
-    <param name="page" type="integer" default="1"/>
-    <param name="per_page" type="integer" default="10"/>
-    <param name="limit" type="integer" default="20" maxvalue="1000" minvalue="1"/>
+    <param name="page" type="integer" required="false" default="1" minvalue="0" maxvalue="1000"/>
+    <param name="per_page" type="integer" required="false" default="10" minvalue="1" maxvalue="50"/>
+    <param name="limit" type="integer" required="false" default="20" minvalue="0" maxvalue="1000"/>
   </request>
   <response name="response" type="anchor">
     <element name="achievements" type="anchor">
